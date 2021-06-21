@@ -46,6 +46,7 @@ struct vdso_data {
 	u64 xtime_clock_snsec;	/* CLOCK_REALTIME sub-ns base */
 	u32 tz_minuteswest;	/* timezone info for gettimeofday(2) */
 	u32 tz_dsttime;
+        u64 btm_nsec;		/* monotonic to boot time */
 };
 
 union vdso_data_store {
